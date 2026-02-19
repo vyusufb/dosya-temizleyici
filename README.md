@@ -1,4 +1,4 @@
-# 🛡️ DOSYA TEMİZLEYİCİ: ULTRA CLEANER (KALE SÜRÜMÜ)
+# 🛡️ DOSYA TEMİZLEYİCİ: ULTRA CLEANER V8 (KALE SÜRÜMÜ)
 
 ![Version](https://img.shields.io/badge/sürüm-v8.0.0-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.9%2B-yellow.svg)
@@ -36,7 +36,9 @@
 Bu araç Python'un standart kütüphanelerini kullanır. Harici bir paket yüklemenize (`pip install`) gerek yoktur.
 
 1.  Bilgisayarınızda **Python 3.9** veya üzeri kurulu olduğundan emin olun.
-2.  Terminal veya CMD üzerinden çalıştırın:
+2.  Aşağıdaki "Kaynak Kod" bölümündeki kodu kopyalayın.
+3.  `dosya_temizleyici.py` adıyla kaydedin.
+4.  Terminal veya CMD üzerinden çalıştırın:
     ```bash
     python dosya_temizleyici.py
     ```
@@ -107,12 +109,9 @@ Sunucu ortamları veya zamanlanmış görevler için parametrelerle çalıştır
 
 Program çalıştığında hedef klasörde şu yapıyı oluşturur:
 
-```tex
+```text
 Hedef_Klasör/
 ├── .karantina_20260218_120000/   # (Gizli) Silinen dosyalar burada tutulur
 ├── snapshot_20260218_120000.json # Dosyaların orijinal yolları ve Hash değerleri
 ├── kale_gunluk_... .log          # İşlem günlüğü
 └── kale_gunluk_... .log.sha256   # Log dosyasının bütünlük mührü
-
-⚠️ Yasal Uyarı
-Bu yazılım "OLDUĞU GİBİ" sunulur. Geliştirici, veri kaybından sorumlu tutulamaz. Ancak yazılım, veri kaybını önlemek için endüstri standardı güvenlik önlemleri (Karantina, Snapshot, Hash Doğrulama) ile donatılmıştır. Her zaman önemli verilerinizin harici yedeğini alınız.
